@@ -21,7 +21,7 @@ Now we can use couchapp to push the files into your database:
 
     couchapp push
 
-Now you can point your browser at the [ODK Paiute](http://localhost:5984/odk/_design/odk-paiute/index.html?):
+Now you can point your browser at the [ODK Paiute](http://localhost:5984/odk/_design/files/index.html?):
 
 How does this work?
 -------------------
