@@ -1,5 +1,5 @@
 ODK Paiute renders json defined forms in a browser and then saves the results to couchdb.
-====
+=========================================================================================
 
 Instructions
 ------------
@@ -32,7 +32,9 @@ CouchDB, [Backbone.js](http://documentcloud.github.com/backbone), json, fermente
 How is this organized?
 ----------------------
 
-All of the backbone [models](http://documentcloud.github.com/backbone/#Model) and [views](http://documentcloud.github.com/backbone/#Model) have their own file and are in app/models and app/views respectively. app/app.js is responsible for tying it all together..
+All of the backbone [models](http://documentcloud.github.com/backbone/#Model) and [views](http://documentcloud.github.com/backbone/#Model) have their own file and are in app/models and app/views respectively. app/app.js is responsible for tying it all together.
+
+You can put json forms into the \_docs directory and they will be added to your couch when you do a couchapp push.
 
 Other useful info
 -----------------
