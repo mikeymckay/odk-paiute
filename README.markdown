@@ -32,7 +32,7 @@ CouchDB, [Backbone.js](http://documentcloud.github.com/backbone), JQuery, Unders
 How is this organized?
 ----------------------
 
-All of the backbone models and views have their own file and are in [app/models](http://documentcloud.github.com/backbone/#Model) and [app/views](http://documentcloud.github.com/backbone/#Model)respectively. [app/app.js](https://github.com/mikeymckay/odk-paiute/blob/master/app/app.js) is responsible for tying it all together.
+All of the backbone models and views have their own file and are in [_attachments/app/models](https://github.com/mikeymckay/odk-paiute/tree/master/_attachments/app/models) and [_attachments/app/views](https://github.com/mikeymckay/odk-paiute/tree/master/_attachments/app/views). [app/app.js](https://github.com/mikeymckay/odk-paiute/blob/master/_attachments/app/app.js) is responsible for tying it all together.
 
 You can put json forms into the [\_docs](https://github.com/mikeymckay/odk-paiute/blob/master/_docs) directory and they will be added to your couch when you do a couchapp push.
 
@@ -44,7 +44,7 @@ It's a pain to run 'couchapp push' everytime you make a change. I wrote a little
     apt-get install rubygems
     gem install watchr
 
-Now open a separate terminal and start it and just let it run.
+Now open a separate terminal, start watchr and just let it watch and push for you.
 
     watchr file.watchr
 
