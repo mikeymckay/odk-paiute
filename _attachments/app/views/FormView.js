@@ -17,6 +17,8 @@ var FormView = Backbone.View.extend({
     "click #form-save " : "save",
   },
   save: function(){
-    $.couch.db("odk").saveDoc($(this.$("form")).toObject())
+    if(this.collection.valid()){
+      $.couch.db("odk").saveDoc($(this.$("form")).toObject())
+    }
   }
 });

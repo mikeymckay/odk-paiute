@@ -9,10 +9,10 @@ var FormElement = Backbone.Model.extend({
       switch (option.name){
         case "optional":
           if (option.value == "false" && attributes.value == ""){
-              validationErrors.push(this.get("label") + " is required");
-            }
+            validationErrors.push(this.get("label") + " is required");
+          }
           break;
-        // TODO
+        // TODO need to implement these
         case "absolute-min":
           break;
         case "absolute-max":
@@ -25,7 +25,13 @@ var FormElement = Backbone.Model.extend({
           validationErrors.push("'"+ this.option.name + "' not supported as a validation option");
       }
     }, this); // Need the "this" here to be able to call this.get("label") above
-    return _.any(validationErrors) ? validationErrors : null;
+    if(_.any(validationErrors)){
+      this.trigger("validationError", validationErrors)
+      return validationErrors
+    }
+    else{
+      return null;
+    }
   },
   url: "/form_element"
 });

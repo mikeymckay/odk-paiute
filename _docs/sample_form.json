@@ -1,0 +1,44 @@
+{
+   "_rev": "6-afbf296bca27af781e45334ff215d733",
+   "form_elements": [
+       {
+           "label": "First Name",
+           "value": "Mike",
+           "options": [
+               {
+                   "name": "optional",
+                   "value": "true"
+               }
+           ],
+           "type": "text"
+       },
+       {
+           "label": "Last Name",
+           "options": [
+               {
+                   "name": "optional",
+                   "value": "false"
+               }
+           ],
+           "type": "text"
+       },
+       {
+           "label": "Age",
+           "options": [
+               {
+                   "name": "absolute-max",
+                   "value": "130"
+               },
+               {
+                   "name": "absolute-min",
+                   "value": "0"
+               },
+               {
+                   "name": "max",
+                   "value": "95"
+               }
+           ],
+           "type": "number"
+       }
+   ]
+}
